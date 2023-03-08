@@ -2,7 +2,7 @@ import { log } from '../../utils/LogHelper';
 import { LOG_CONSTANTS } from '../../configs/constants/LogConstants';
 import { hash } from 'bcryptjs';
 import { Users } from "../../entity/Users";
-import { appDataSource } from "../DataBase/data-source";
+import { appDataSource } from "../../data-source";
 
 
 type userToUpdate = {

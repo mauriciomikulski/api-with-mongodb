@@ -3,7 +3,7 @@ import { log } from '../../utils/LogHelper';
 import { LOG_CONSTANTS } from '../../configs/constants/LogConstants';
 import { Users } from '../../entity/Users';
 import { MailTrapService } from "../../services/MailTrap/MailTrap.service";
-import { appDataSource } from '../DataBase/data-source';
+import { appDataSource } from '../../data-source';
 
 export class ResetPasswordService {
   static async execute(user: Users): Promise<Users> {

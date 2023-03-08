@@ -7,7 +7,7 @@ import  {log,loggerOptions}  from './utils/LogHelper';
 import { CommonRoutes } from './routes/CommonRoutes';
 import { UsersRoutes } from './routes/UsersRoutes';
 import { LOG_CONSTANTS } from './configs/constants/LogConstants';
-import "./services/DataBase/data-source";
+import "./data-source";
 import { AuthRoutes } from './routes/AuthRoutes';
 
 class App {
@@ -72,7 +72,7 @@ class App {
 
   protected getRoutes() {
     this.server.get('/', (req, res) => {
-      const error = new Error('You dont have permission to access this page');
+      const error = new Error('You dont have permission to access this path');
       res.status(401).send(error.message);
     })
     

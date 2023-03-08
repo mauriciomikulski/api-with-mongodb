@@ -13,3 +13,4 @@ export interface IMessage {
 export interface IMailTrap {
   sendMail(message: IMessage): Promise<void>;
 }
+
