@@ -1,6 +1,4 @@
-import express, { Application, Express, Request, Response } from "express";
-
-
+import express, { Application } from "express";
 export abstract class CommonRoutes {
   app: Application = express();
   name: string;

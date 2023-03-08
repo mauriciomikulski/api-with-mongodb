@@ -22,7 +22,7 @@ export class SignAuthController {
         }
       });
     } catch (error) {
-      return res.status(400).json({ message: error.message || 'Unexpected error.' });
+      return res.status(400).json({ message: error.message+"aqui" || 'Unexpected error.' });
     }
   }
 }

@@ -1,7 +1,7 @@
 import { log } from "../../utils/LogHelper";
 import { LOG_CONSTANTS } from "../../configs/constants/LogConstants";
 import { Users } from "../../entity/Users";
-import { appDataSource } from "../DataBase/data-source";
+import { appDataSource } from "../../data-source";
 
 export class DeleteUserService {
   static async execute(id: string): Promise<Users | Error> {
